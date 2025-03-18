@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,400;1,600&family=Playfair+Display:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ponomar&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Ponomar&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rochester&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+:root {
+  --btn-color-primary: #d47c25;
+  --btn-color-secondary: #58674a;
+  --fc-for-bg-accent: #414042;
+  --navbar: #58674a;
+  --border-color: #00ab09;
+  --color-primary: #58674a;
+  --color-secondary: #053c27;
+  --bg-color-primary: #151515;
+  --color-accent: #cecece;
+  --white: #fff;
+  --grey: #414042;
+  --grey2: rgb(204, 204, 204) 2;
+
+  /* --color-primary: #151515; */
+  /* --color-secondary: #65a4cf; */
+  /* --color-accent: #f19834; */
+  /* --font-dancing: 'Dancing Script', cursive;
+  --font-playfair: 'Playfair Display', serif;
+  --font-open: 'Open Sans', sans-serif; */
+}
+
+* {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  width: 414px;
+}
+
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+.d-flex {
+  display: flex;
+}
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin: 0;
+}
+
+input:active,
+button:active,
+select:active,
+textarea:active,
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--btn-color-secondary);
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+button.button,
+a.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0;
+  color: white;
+  text-decoration: none;
+  background: var(--btn-color-primary);
+  border-radius: 4px;
+  max-width: calc(100% - 15px);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 46px;
+}
+.button.button-small {
+  height: 36px;
+}
+
+button.button {
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+
+.button.button-live img {
+  margin-right: 6px;
+  /* box-shadow: inset 0 0 99999px var(--color-secondary) !important; */
+}
+.button.button-live {
+  width: auto;
+  font-weight: 600;
+  max-width: none;
+  padding: 12px 16px;
+  color: var(--color-secondary) !important;
+  border: 2px solid var(--color-secondary) !important;
+  border-radius: 20px;
+  margin-top: 24px;
+  font-size: 13px;
+  width: auto;
+  display: inline-flex;
+}
+
+.button.button-transparent {
+  background: transparent;
+  color: var(--btn-color-primary);
+  border: 2px solid var(--btn-color-primary);
+}
+
+.button.button-secondary {
+  background: var(--btn-color-secondary);
+  color: var(--white);
+  border: none;
+}
+
+.button.button-primary {
+  background: var(--btn-color-primary);
+  color: var(--white);
+  border: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.f-parisienne {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f-rochester {
+  font-family: "Rochester", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f-pinyon {
+  font-family: "Pinyon Script", cursive;
+}
+
+.f-ponomar {
+  font-family: "Ponomar", system-ui;
+}
+
+.f-cabin {
+  font-family: "Cabin", sans-serif;
+}
+
+.f-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.f-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.f-open {
+  font-family: "Open Sans", sans-serif;
+}
+
+.fw-20 {
+  font-weight: 20;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-80 {
+  font-size: 80px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+.fs-56 {
+  font-size: 56px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+
+.fc-btn-color-primary {
+  color: var(--btn-color-primary) !important;
+}
+
+.fc-grey2 {
+  color: var(--grey2) !important;
+}
+
+.fc-black {
+  color: black !important;
+}
+
+.fc-border-color {
+  color: var(--border-color) !important;
+}
+
+.fc-primary {
+  color: var(--color-primary) !important;
+}
+
+.fc-white {
+  color: var(--white) !important;
+}
+
+.fc-for-bg-accent {
+  color: var(--fc-for-bg-accent) !important;
+}
+
+.fc-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.fc-grey {
+  color: var(--grey) !important;
+}
+
+.f-italic {
+  font-style: italic;
+}
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+/* section#verse.content-page, */
+.bg-primary {
+  background-attachment: fixed !important;
+}
+
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+.bg-accent {
+  background-color: var(--color-accent) !important;
+}
+.bg-navbar {
+  background-color: var(--navbar) !important;
+}
+
+.bg-grey {
+  background-color: var(--grey) !important;
+}
+
+.content-page {
+  background-image: url("/img/bg-isi.webp");
+  padding: 30px 15px;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-attachment: fixed !important;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+/* @media screen and (max-width: 425px) {
+  .content-page {
+    background-attachment: fixed;
+  }
+} */
+
+.content-page.no-bg {
+  background: white;
+}
+
+.content-page .inner-section {
+  padding: 16px;
+  background-color: transparent;
+  min-height: calc(100vh - 30px);
+}
+@media (max-width: 320px) {
+  .inner-section {
+    padding: 15px 0 !important;
+  }
+}
+
+.iframe-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 140%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+input.field-danger {
+  border: 2px solid rgb(221, 28, 28);
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 72.25%;
+  margin-top: 20px;
+  /* padding-top: 56.25%; //16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.iframe-container [title="YouTube video player"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+svg.ic-copy {
+  margin-right: 10px;
+}
